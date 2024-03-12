@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--        상단바-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#70AFF1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/Profile"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btnMypage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/house_24px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/btnSaveAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/left_btn_background"
+                    android:text="저장하GYM"
+                    android:textSize="13dp"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/right_btn_background"
+                    android:text="취소하GYM"
+                    android:textColor="@color/red" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:verticalScrollbarPosition="right" />
+            <EditText
+                android:id="@+id/edTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bmjua"
+                android:hint="제목을 입력하세요."
+                android:maxLength="8"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내용을 입력하세요"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시간을 입력하세요"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+
+
+        </RelativeLayout>
+
+
+        <!--운동 기록페이지 본문 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="230dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edContent1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint=""
+                    android:inputType="none"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edContent2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint=""
+                    android:inputType="none"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edContent3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="120dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint=""
+                    android:inputType="none"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edContent4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="180dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint=""
+                    android:inputType="none"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edContent5"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="240dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint=""
+                    android:inputType="none"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edm1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint="분"
+                    android:inputType="number"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edm2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="77dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint="분"
+                    android:inputType="number"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edm3"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="137dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint="분"
+                    android:inputType="number"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edm4"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="197dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint="분"
+                    android:inputType="number"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edm5"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="257dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint="분"
+                    android:inputType="number"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/eds1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint="초"
+                    android:inputType="number"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/eds2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="77dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint="초"
+                    android:inputType="number"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/eds3"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="137dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint="초"
+                    android:inputType="number"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/eds4"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="197dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint="초"
+                    android:inputType="number"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/eds5"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="257dp"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:hint="초"
+                    android:inputType="number"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

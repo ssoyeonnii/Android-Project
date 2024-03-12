@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Chronometer
+            android:id="@+id/chronometer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:textSize="70dp" />
+
+        <android.widget.Button
+            android:id="@+id/btnSave3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_noneline"
+            android:layout_gravity="center"
+            android:text="@string/txt_Save"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStart3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/arrow_right_24px" />
+
+        <Button
+            android:id="@+id/btnStop3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/pause_24px"
+            android:enabled="false" />
+
+        <Button
+            android:id="@+id/btnReset3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/restart_alt_24px"
+            android:enabled="false" />
+    </LinearLayout>
+
+</RelativeLayout>

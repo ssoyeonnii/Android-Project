@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test">
+        <item>웨이트</item>
+        <item>스텝퍼</item>
+        <item>하이킹</item>
+        <item>러닝</item>
+    </string-array>
+</resources>

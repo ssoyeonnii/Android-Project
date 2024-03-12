@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.NOTIFICATION_SERVICE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icon_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_main"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Android_team4_project"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PopupActivitymon"
+            android:exported="false" />
+        <activity
+            android:name=".PopupActivitytue"
+            android:exported="false" />
+        <activity
+            android:name=".PopupActivitywed"
+            android:exported="false" />
+        <activity
+            android:name=".PopupActivitythu"
+            android:exported="false" />
+        <activity
+            android:name=".PopupActivityfri"
+            android:exported="false" />
+        <activity
+            android:name=".PopupActivitysat"
+            android:exported="false" />
+        <activity
+            android:name=".PopupActivitysun"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivitymon"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivitytue"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivitywed"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivitythu"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivityfri"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivitysat"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivitysun"
+            android:exported="false" />
+        <activity
+            android:name=".CountDownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StopActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".StopActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".StopActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".StopActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".StopActivity5"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false">
+
+        </activity>
+
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false">
+
+        </activity>
+
+
+        <provider
+
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android_team4_project.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="com.google.android.gms.auth.GOOGLE_SIGN_IN_API_KEY"
+                android:value="AIzaSyCk9twRwjAniF1xt-cW49vcjEAKKmDjN34" />
+            <meta-data
+                android:name="com.google.android.gms.auth.GOOGLE_SIGN_IN_CLIENT_ID"
+                android:value="androidteam4-27322" />
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths">
+            </meta-data>
+
+        </provider>
+    </application>
+
+</manifest>
